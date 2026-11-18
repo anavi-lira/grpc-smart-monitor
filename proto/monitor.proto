@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package monitor;
+
+service MonitorService {
+  rpc GetSensorStatus(SensorRequest) returns (SensorData);
+
+  rpc MonitorSensor(SensorRequest) returns (stream SensorData);
+}
+
+message SensorRequest {
+  int32 sensor_id = 1;
+}
+
+message SensorData {
+  int32 sensor_id = 1;
+  double temperatura = 2;
+  double umidade = 3;
+  string status = 4;
+  int64 timestamp = 5;
+}
+
+// python generate_stubs.py
