@@ -24,6 +24,8 @@ if _version_not_supported:
         + f' or downgrade your generated code using grpcio-tools<={GRPC_VERSION}.'
     )
 
+        #estruturas relacionadas ao serviço gRPC,  o stub utilizado pelo cliente
+        # e a base utilizada pelo servidor.
 
 class MonitorServiceStub:
     """Missing associated documentation comment in .proto file."""

@@ -7,6 +7,7 @@ from flask import jsonify
 
 app = Flask(__name__)
 
+# fornece os mesmos dados que foram fornecidos pra grpc_client
 
 def gerar_dados_sensor(sensor_id: int):
 

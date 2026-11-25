@@ -21,7 +21,7 @@ _runtime_version.ValidateProtobufRuntimeVersion(
 
 _sym_db = _symbol_database.Default()
 
-
+        #as classes das mensagens
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rmonitor.proto\x12\x07monitor\"\"\n\rSensorRequest\x12\x11\n\tsensor_id\x18\x01 \x01(\x05\"h\n\nSensorData\x12\x11\n\tsensor_id\x18\x01 \x01(\x05\x12\x13\n\x0btemperatura\x18\x02 \x01(\x01\x12\x0f\n\x07umidade\x18\x03 \x01(\x01\x12\x0e\n\x06status\x18\x04 \x01(\t\x12\x11\n\ttimestamp\x18\x05 \x01(\x03\x32\x90\x01\n\x0eMonitorService\x12>\n\x0fGetSensorStatus\x12\x16.monitor.SensorRequest\x1a\x13.monitor.SensorData\x12>\n\rMonitorSensor\x12\x16.monitor.SensorRequest\x1a\x13.monitor.SensorData0\x01\x62\x06proto3')
